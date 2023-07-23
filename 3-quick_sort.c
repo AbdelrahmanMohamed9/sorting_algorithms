@@ -11,14 +11,14 @@
 void q_sort(int *arr, int start, int end, int size)
 {
 	int temp, a;
-	ssize_t i = start;
-	size_t k;
+	int i = start;
+	int k;
 
 	if (end > start)
 	{
 		a = arr[end];
 		k = start - 1;
-		for (i < end)
+		while (i < end)
 		{
 			if (arr[i] < a)
 			{
